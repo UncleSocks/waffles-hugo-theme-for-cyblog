@@ -43,6 +43,28 @@
   
     <h2><a href="/posts/test/">Test</a></h2>
     <p>Hello World</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">banner</span>():
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    banner <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        ____  _      _      
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        |  _ \(_)_  _(_) ___ 
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        | |_) | \ \/ / |/ _ </span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        |  __/| |&gt;  &lt;| |  __/
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        |_|   |_/_/\_\_|\___|lite
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        IBM X-Force IP Reputation
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> print(banner)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">public_address_parser</span>(ip_address):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">match</span> <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;((^127\.)|(^192\.168\.)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">match</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span></code></pre></div>
   
 
     </div>
