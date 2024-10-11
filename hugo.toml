@@ -25,9 +25,15 @@ weight = 30
 
 [params.about]
 title = "waffles"
-description = "A [hugo](https://gohugo.io) theme inspired by terminal ricing."
+description = "add description here..."
+
+[[params.socialLinks]]
+icon = "fa-brands fa-linkedin"
+url = "https://www.linkedin.com/feed/"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
-title = "GitHub"
-url = "https://github.com/joeroe/risotto"
+url = "https://www.linkedin.com/feed/"
+
+[params]
+copyright = "this is a copyright test"

@@ -11,7 +11,11 @@
 <ul class="sidebar-links">
     {{ range $link := .Site.Params.socialLinks }}
     <li>
-        <a ahref="{{ $link.url }}" rel="me" aria-label="{{ $link.title }}" title="{{ $link.title }}"><i class="{{ $link.icon }}" aria-hidden="true"></i></a>&nbsp;
+        <a href="{{ $link.url }}" rel="me" aria-label="{{ $link.title }}" title="{{ $link.title }}">
+            <i class="{{ $link.icon }}" aria-hidden="true"></i>
+        </a>&nbsp;
     </li>
     {{ end }}
 </ul>
+
+<p>--</p>

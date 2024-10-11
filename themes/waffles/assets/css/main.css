@@ -60,3 +60,25 @@ a {
 .main-menu li {
   margin-right: 20px;
 }
+
+ul.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+ul.sidebar-link li {
+  display: inline-block;
+}
+
+.sidebar-title {
+  font-size: 15px;
+}
+
+.post-list {
+  color: rgb(237, 255, 224);
+}
+
+.post-list a {
+  color: rgb(110, 255, 129);
+}

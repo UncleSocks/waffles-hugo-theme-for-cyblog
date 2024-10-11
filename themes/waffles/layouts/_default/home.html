@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ .Content }}
   {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <p class="post-list">{{ .Date | dateFormat "January 2, 2006" }} - <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p >
   {{ end }}
 {{ end }}
