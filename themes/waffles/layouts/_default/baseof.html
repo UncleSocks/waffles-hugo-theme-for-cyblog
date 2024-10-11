@@ -9,7 +9,12 @@
   </header>
   <main>
     <div class="container">
-      {{ block "main" . }}{{ end }}
+      <div class="content">
+        {{ block "main" . }}{{ end }}
+      </div>
+      <div class="sidebar">
+        {{ partial "about.html" . }}
+      </div>
     </div>
   </main>
   <footer>

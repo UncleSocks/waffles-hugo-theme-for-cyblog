@@ -22,3 +22,12 @@ weight = 30
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+
+[params.about]
+title = "waffles"
+description = "A [hugo](https://gohugo.io) theme inspired by terminal ricing."
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/joeroe/risotto"
