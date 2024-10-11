@@ -24,8 +24,7 @@ weight = 30
     min = "0.116.0"
 
 [params.about]
-title = "waffles"
-description = "add description here..."
+description = "A blog to record my cybersecurity journey."
 
 [[params.socialLinks]]
 icon = "fa-brands fa-linkedin"

@@ -6,14 +6,203 @@
     <description>Recent content in Posts on UncleSocks CyBlog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Oct 2024 22:20:27 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2024 23:59:58 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-10/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-10/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-11/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-11/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-12/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-12/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-14/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-14/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-15/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-15/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-17/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-17/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-19/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-19/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-2/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-2/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-20/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-20/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-21/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-21/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-23/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-23/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-25/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-25/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-26/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-26/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-28/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-28/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-29/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-29/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-3/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-3/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-31/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-31/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-32/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-32/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-33/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-33/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-34/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-34/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-35/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-35/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-36/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-36/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-37/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-37/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-38/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-38/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-4/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-4/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy-5/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-5/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/posts/test---copy/</link>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy/</guid>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test</title>
       <link>http://localhost:1313/posts/test/</link>
-      <pubDate>Thu, 10 Oct 2024 22:20:27 +0800</pubDate>
+      <pubDate>Fri, 11 Oct 2024 23:59:58 +0800</pubDate>
       <guid>http://localhost:1313/posts/test/</guid>
-      <description>&lt;p&gt;Hello World&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;banner&lt;/span&gt;():&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    banner &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        ____  _      _      &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        |  _ \(_)_  _(_) ___ &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        | |_) | \ \/ / |/ _ &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        |  __/| |&amp;gt;  &amp;lt;| |  __/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        |_|   |_/_/\_\_|\___|lite&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        IBM X-Force IP Reputation&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; print(banner)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;public_address_parser&lt;/span&gt;(ip_address):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; re&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;compile(&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;((^127\.)|(^192\.168\.)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;True&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;p&gt;This is a test&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
