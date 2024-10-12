@@ -1,7 +1,8 @@
 +++
 title = 'Test'
-date = 2024-10-11T23:59:58+08:00
+date = 2024-10-12T20:30:16+08:00
 draft = false
+type = "posts"
 +++
 
-This is a test
+This is another test
