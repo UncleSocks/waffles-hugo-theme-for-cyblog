@@ -85,3 +85,20 @@ ul.sidebar-link li {
 .post-list a {
   color: rgb(110, 255, 129);
 }
+
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-link {
+  color: rgb(237, 255, 224);
+  padding: 10px 15px;
+}
+
+.page-item.active .page-link {
+  color: rgb(110, 255, 129);
+}

@@ -2,4 +2,37 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Site'
 
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[params.about]
+title = "Waffles CyBlog Theme"
+description = "A simple Hugo dark theme created for my cybersecurity blog, and inspired by the risotto theme."
+
+[[params.socialLinks]]
+icon = "fa-brands fa-linkedin"
+url = "https://www.linkedin.com/feed/"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+url = "https://www.github.com/"
+
+[params]
+copyright = "this is a copyright test"

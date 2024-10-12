@@ -1,38 +1,9 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'UncleSocks CyBlog'
+title = 'Waffles CyBlog Theme'
 theme = 'waffles'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
-
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
-
-[params.about]
-description = "A blog to record my cybersecurity journey."
-
-[[params.socialLinks]]
-icon = "fa-brands fa-linkedin"
-url = "https://www.linkedin.com/feed/"
-
-[[params.socialLinks]]
-icon = "fa-brands fa-github"
-url = "https://www.linkedin.com/feed/"
-
-[params]
-copyright = "this is a copyright test"
+[pagination]
+  disableAliases = false
+  pagerSize = 20

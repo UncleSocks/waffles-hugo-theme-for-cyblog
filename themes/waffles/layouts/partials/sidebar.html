@@ -1,6 +1,5 @@
-<h1 class="sidebar-title">{{ .Title }}</h1>
 {{ with .Site.Params.about }}
-    
+    <h1 class="sidebar-title">{{ .title }}</h1>    
     {{ with .description}}
         <p class="sidebar-description">{{ . | markdownify }}</p>
     {{ end }}
