@@ -1,30 +1,9 @@
 name = 'Waffles'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
-
-# The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
-
-# If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
-
-# Taxonomy terms
-tags = ['blog', 'company']
-
-# If the theme has multiple authors
-authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
-]
-
-# If the theme has a single author
-[author]
-  name = 'Your name'
-  homepage = 'Your website'
-
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
+licenselink = 'https://github.com/UncleSocks/waffles-a-hugo-theme-for-cyblog/blob/main/LICENSE.md'
+description = 'Waffles is a minimal dark Hugo theme, inspired by the Risotto Theme, created for my CyBlog'
+homepage = 'https://github.com/UncleSocks/waffles-a-hugo-theme-for-cyblog'
+tags = ['blog', 'dark', 'minimal']
+features = ['favicon', 'no javascript']
+min_version = "v0.1"
+author = Tyrone Kevin S. Ilisan
