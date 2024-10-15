@@ -1,4 +1,4 @@
-# Theme Name
+# Waffles
 
 ## Features
 
