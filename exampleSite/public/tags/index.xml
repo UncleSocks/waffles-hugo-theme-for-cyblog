@@ -9,10 +9,17 @@
     <lastBuildDate>Sun, 13 Oct 2024 20:30:16 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hacking</title>
-      <link>http://localhost:1313/tags/hacking/</link>
+      <title>Blueteam</title>
+      <link>http://localhost:1313/tags/blueteam/</link>
       <pubDate>Sun, 13 Oct 2024 20:30:16 +0800</pubDate>
-      <guid>http://localhost:1313/tags/hacking/</guid>
+      <guid>http://localhost:1313/tags/blueteam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Forensics</title>
+      <link>http://localhost:1313/tags/forensics/</link>
+      <pubDate>Sun, 13 Oct 2024 20:30:16 +0800</pubDate>
+      <guid>http://localhost:1313/tags/forensics/</guid>
       <description></description>
     </item>
     <item>
@@ -20,6 +27,34 @@
       <link>http://localhost:1313/tags/security/</link>
       <pubDate>Sun, 13 Oct 2024 20:30:16 +0800</pubDate>
       <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>http://localhost:1313/tags/hacking/</link>
+      <pubDate>Sat, 12 Oct 2024 20:30:16 +0800</pubDate>
+      <guid>http://localhost:1313/tags/hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>http://localhost:1313/tags/network/</link>
+      <pubDate>Sat, 13 Apr 2024 20:30:16 +0800</pubDate>
+      <guid>http://localhost:1313/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sat, 13 Apr 2024 20:30:16 +0800</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>http://localhost:1313/tags/tool/</link>
+      <pubDate>Sat, 13 Apr 2024 20:30:16 +0800</pubDate>
+      <guid>http://localhost:1313/tags/tool/</guid>
       <description></description>
     </item>
   </channel>

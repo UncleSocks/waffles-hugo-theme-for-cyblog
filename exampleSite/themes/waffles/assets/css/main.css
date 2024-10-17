@@ -24,6 +24,12 @@ a {
   text-decoration: none;
 }
 
+pre {
+  overflow-x: auto;      
+  padding: 20px;         
+  border-radius: 5px;    
+}
+
 .container {
   display: flex;
   margin: 10px auto;
