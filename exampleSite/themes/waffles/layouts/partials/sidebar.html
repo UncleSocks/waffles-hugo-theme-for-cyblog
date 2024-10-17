@@ -1,0 +1,20 @@
+{{ with .Site.Params.about }}
+    <h1 class="sidebar-title">{{ .title }}</h1>    
+    {{ with .description}}
+        <p class="sidebar-description">{{ . | markdownify }}</p>
+    {{ end }}
+    
+{{ end }}
+
+
+<ul class="sidebar-links">
+    {{ range $link := .Site.Params.socialLinks }}
+    <li>
+        <a href="{{ $link.url }}" rel="me" aria-label="{{ $link.title }}" title="{{ $link.title }}">
+            <i class="{{ $link.icon }}" aria-hidden="true"></i>
+        </a>&nbsp;
+    </li>
+    {{ end }}
+</ul>
+
+<p>--</p>

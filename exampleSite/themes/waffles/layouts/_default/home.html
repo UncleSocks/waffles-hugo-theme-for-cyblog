@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+  {{ $paginator := .Paginate (where site.RegularPages "Type" "posts" )}}
+  {{ range $paginator.Pages }}
+    <p class="post-list">{{ .Date | dateFormat "January 2, 2006" }} - <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p >
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

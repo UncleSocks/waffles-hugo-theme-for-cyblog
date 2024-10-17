@@ -1,0 +1,9 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Waffles CyBlog Theme'
+theme = 'waffles'
+
+
+[pagination]
+  disableAliases = false
+  pagerSize = 20

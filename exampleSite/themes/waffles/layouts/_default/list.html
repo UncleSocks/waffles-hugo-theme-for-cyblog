@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ if eq .Section "posts" }}
+
+    {{ $pages := where .Site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages.ByDate 10 }}
+    {{ range $paginator.Pages }}
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ .Summary }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+
+  {{ else }}
+    {{ range .Pages }}
+      <li class="list-others"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+
+  {{ end }}
+{{ end }}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>ONYX: Cisco Assessment and Auditing Tool (CAAAT) | Waffles CyBlog Theme</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    
+  <nav>
+    <ul class="main-menu">
+    
+    <li>
+      <a href="/">Home</a>
+    </li>
+    
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+    </li>
+    
+    <li>
+      <a href="/tags/">Tags</a>
+    </li>
+    </ul>
+  </nav>
+ 
+
+  </header>
+  <main>
+    <div class="container">
+      <div class="content">
+        
+  <h1 class="post-title">ONYX: Cisco Assessment and Auditing Tool (CAAAT)</h1>
+
+  
+  
+  <time datetime="2024-04-13T20:30:16&#43;08:00" class="post-time">April 13, 2024</time>
+
+  <div class="post-content">
+    <h3 id="supported-cisco-cis-benchmark-versions">Supported Cisco CIS Benchmark Versions</h3>
+<p>ONYX currently asses your Cisco devices against the following Cisco CIS Benchmark versions:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Cisco Benchmark</th>
+          <th style="text-align: left">Version</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">CIS Cisco IOS 15 Benchmark</td>
+          <td style="text-align: left">v4.1.1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CIS Cisco IOS 17.x Benchmark</td>
+          <td style="text-align: left">v2.0.0</td>
+      </tr>
+  </tbody>
+</table>
+<p>Both documents are available under the &ldquo;CIS Benchmark Documents&rdquo; folder.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Run <code>pip install -r requirements.txt</code> to install the tool&rsquo;s dependencies.</p>
+<h3 id="dependencies">Dependencies</h3>
+<p>The tool uses <code>Netmiko</code> to connect to the target Cisco IOS router via SSH. The <code>Maskpass</code> and <code>PrettyTable</code> are used to obfuscate the login password and display the report output in the CLI, respectively.</p>
+<p><strong>Note:</strong> SSH must already be configured on the target Cisco IOS router and the host machine, running the tool, should also have a stable connection to the router.</p>
+<h2 id="options">Options</h2>
+<p>Use the <code>-h</code> or <code>--help</code> option to display a brief guide on how to use ONYX.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>C:\Users\UncleSocks\Documents\Tools\Onyx_Directory\onyx<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>h
+</span></span><span style="display:flex;"><span>usage: ONYX [<span style="color:#f92672">-</span>h] [<span style="color:#f92672">-</span>v VERSION] [<span style="color:#f92672">-</span>o OUTPUT]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Onyx <span style="color:#f92672">is</span> an automated assessment <span style="color:#f92672">and</span> auditing tool, currently supporting Center <span style="color:#66d9ef">for</span> Internet Security (CIS) Cisco IOS <span style="color:#ae81ff">15</span> Benchmark <span style="color:#f92672">and</span> Cisco IOS <span style="color:#ae81ff">17</span> Benchmark version <span style="color:#ae81ff">8.</span> If no option <span style="color:#f92672">is</span> specified, it will automatically attempt to
+</span></span><span style="display:flex;"><span>identify the Cisco IOS version <span style="color:#f92672">and</span> will only output the assessment result <span style="color:#f92672">in</span> the CLI<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>options:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>h, <span style="color:#f92672">--</span>help            show this help message <span style="color:#f92672">and</span> exit
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>v VERSION, <span style="color:#f92672">--</span>version VERSION
+</span></span><span style="display:flex;"><span>                        Cisco IOS version (<span style="color:#ae81ff">15</span><span style="color:#f92672">|</span><span style="color:#ae81ff">17</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">-</span>o OUTPUT, <span style="color:#f92672">--</span>output OUTPUT
+</span></span><span style="display:flex;"><span>                        HTML report filename <span style="color:#66d9ef">with</span> <span style="color:#f92672">.</span>html extension
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The HTML report output <span style="color:#f92672">is</span> saved under the <span style="color:#e6db74">&#39;reports_module&#39;</span> directory<span style="color:#f92672">.</span>
+</span></span></code></pre></div><h3 id="available-options">Available Options</h3>
+<p><code>-v</code> or <code>--version</code>: Explicitly specify the target&rsquo;s Cisco IOS version, either 15 or 17. If this option is not specified, the tool will attempt to identify the router&rsquo;s version automatically.</p>
+<p><code>-o</code> or <code>--output</code>: Specify the HTML report filename with the <code>.html</code> extension. If this option is not specified, the tool will not export the report in HTML format and will only display the output in the CLI.</p>
+<h2 id="usage">Usage</h2>
+<p><strong>Quick Start</strong>: Simply run <code>onyx.py</code> and wait for ONYX to complete its assessment.</p>
+<p><strong>Start with Options</strong>: Run <code>onyx.py -v [15|17] -o &lt;filename&gt;.html</code> to explicitly specify the Cisco IOS version and export the output in HTML format.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>C:\Users\UncleSocks\Documents\Tools\Onyx_Directory\onyx<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>v <span style="color:#ae81ff">17</span> <span style="color:#f92672">-</span>o report<span style="color:#f92672">.</span>html
+</span></span></code></pre></div><h3 id="running-onyx-caaat">Running ONYX: CAAAT</h3>
+<p>When running ONYX, it will require you to enter the Cisco router&rsquo;s <strong>IP address</strong>, <strong>username</strong>, <strong>password</strong>, and <strong>enable password/secret</strong>. Ensure that the target is reachable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>C:\Users\UncleSocks\Documents\Tools\Onyx_Directory\onyx<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>v <span style="color:#ae81ff">17</span> <span style="color:#f92672">-</span>o report<span style="color:#f92672">.</span>html
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">==================================================================================================================================</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">==================================================================================================================================</span>
+</span></span><span style="display:flex;"><span>                                        :;       <span style="color:#f92672">..</span>    _______
+</span></span><span style="display:flex;"><span>                                          <span style="color:#f92672">+</span>X<span style="color:#960050;background-color:#1e0010">$</span>XxxX<span style="color:#960050;background-color:#1e0010">$</span>x    <span style="color:#f92672">&lt;</span> MEOW <span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>                                          X<span style="color:#960050;background-color:#1e0010">$$$</span>XXX<span style="color:#f92672">+</span>    [_______]
+</span></span><span style="display:flex;"><span>                                          :<span style="color:#960050;background-color:#1e0010">$$</span>X<span style="color:#960050;background-color:#1e0010">$</span>xX<span style="color:#960050;background-color:#1e0010">$</span>:   <span style="color:#f92672">/</span>
+</span></span><span style="display:flex;"><span>                                      <span style="color:#f92672">.</span>;<span style="color:#960050;background-color:#1e0010">$</span>X<span style="color:#960050;background-color:#1e0010">$$$</span>X<span style="color:#960050;background-color:#1e0010">$$$</span>
+</span></span><span style="display:flex;"><span>                                    :X<span style="color:#960050;background-color:#1e0010">$$</span>X<span style="color:#960050;background-color:#1e0010">$$$$</span>XXx;<span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>                                  :XX<span style="color:#960050;background-color:#1e0010">$$$$$$$$$</span><span style="color:#f92672">&amp;</span><span style="color:#960050;background-color:#1e0010">$</span>XX
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">.</span>XXX<span style="color:#960050;background-color:#1e0010">$$$$$</span>XXX<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>                                xXXX<span style="color:#960050;background-color:#1e0010">$$$$$</span>XX<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;</span><span style="color:#960050;background-color:#1e0010">$</span>;   <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;+</span> <span style="color:#f92672">&amp;&amp;</span>X<span style="color:#f92672">.</span>  <span style="color:#f92672">.</span>;<span style="color:#f92672">&amp;&amp;&amp;&amp;&amp;+</span>  ;<span style="color:#f92672">&amp;&amp;</span>;<span style="color:#f92672">.</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;&amp;&amp;.</span>  ;<span style="color:#f92672">&amp;</span><span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span> :<span style="color:#f92672">&amp;&amp;&amp;&amp;&amp;</span>x<span style="color:#f92672">.</span> ;<span style="color:#f92672">&amp;</span><span style="color:#960050;background-color:#1e0010">$</span>:
+</span></span><span style="display:flex;"><span>                                x<span style="color:#960050;background-color:#1e0010">$$</span>X<span style="color:#960050;background-color:#1e0010">$$$</span><span style="color:#f92672">&amp;</span><span style="color:#960050;background-color:#1e0010">$</span>X<span style="color:#960050;background-color:#1e0010">$$$</span><span style="color:#f92672">+</span>  :<span style="color:#f92672">&amp;&amp;&amp;&amp;.</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;</span>X   x<span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;&amp;</span>X  <span style="color:#f92672">..</span>   X<span style="color:#f92672">&amp;&amp;&amp;&amp;</span><span style="color:#960050;background-color:#1e0010">$</span>   :    <span style="color:#f92672">.&amp;&amp;&amp;&amp;&amp;+</span> :;
+</span></span><span style="display:flex;"><span>                                ;<span style="color:#960050;background-color:#1e0010">$$$$$$$$$$$$</span>   <span style="color:#f92672">&amp;&amp;&amp;&amp;&amp;.</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;&amp;</span>x  x <span style="color:#f92672">+&amp;&amp;&amp;&amp;&amp;..</span>     X<span style="color:#f92672">&amp;&amp;&amp;&amp;</span><span style="color:#960050;background-color:#1e0010">$</span>::      <span style="color:#f92672">.&amp;&amp;&amp;&amp;&amp;</span>x
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">.</span><span style="color:#960050;background-color:#1e0010">$$$$$$$$$$$</span>X  <span style="color:#f92672">.&amp;&amp;&amp;&amp;&amp;.</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;&amp;</span>X  x  <span style="color:#f92672">.&amp;&amp;&amp;&amp;&amp;</span>X      x<span style="color:#f92672">&amp;&amp;&amp;&amp;+</span>        <span style="color:#f92672">.&amp;&amp;&amp;&amp;&amp;</span>;
+</span></span><span style="display:flex;"><span>                                <span style="color:#f92672">.</span>X<span style="color:#960050;background-color:#1e0010">$$$$$$$$$$</span>x   <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;&amp;.</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;&amp;.</span>  x    <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;&amp;</span>      ;<span style="color:#f92672">&amp;&amp;&amp;&amp;+</span>       :<span style="color:#f92672">.</span>:<span style="color:#f92672">&amp;&amp;&amp;&amp;&amp;</span>:
+</span></span><span style="display:flex;"><span>                                ;<span style="color:#960050;background-color:#1e0010">$$$$$$$$$$$$$$</span><span style="color:#f92672">.</span>  <span style="color:#f92672">+&amp;&amp;&amp;.</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">&amp;&amp;&amp;.</span>  <span style="color:#f92672">.&amp;.</span>    <span style="color:#f92672">+&amp;&amp;&amp;</span>      ;<span style="color:#f92672">&amp;&amp;&amp;&amp;+</span>      <span style="color:#960050;background-color:#1e0010">$</span>:  <span style="color:#f92672">.&amp;&amp;&amp;&amp;&amp;</span>:
+</span></span><span style="display:flex;"><span>                                ;<span style="color:#960050;background-color:#1e0010">$$</span>X<span style="color:#f92672">.</span>   <span style="color:#f92672">....</span>XX:     <span style="color:#f92672">......</span>     <span style="color:#f92672">..</span>    <span style="color:#f92672">....</span>      <span style="color:#f92672">......</span>      <span style="color:#f92672">..</span>  <span style="color:#f92672">.......</span>  , iii, iv, v
+</span></span><span style="display:flex;"><span>                                  X<span style="color:#960050;background-color:#1e0010">$$$</span>Xxxx<span style="color:#f92672">+</span>xX
+</span></span><span style="display:flex;"><span>                                      <span style="color:#f92672">.</span>:;x;           Cisco Automated Assessment <span style="color:#f92672">and</span> Auditing Tool
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Created by Tyrone Kevin Ilisan (<span style="color:#a6e22e">@unclesocks</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">+</span>] Release <span style="color:#ae81ff">2024.1.0</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">+</span>] Audits CIS Cisco IOS <span style="color:#ae81ff">15</span> <span style="color:#f92672">and</span> IOS <span style="color:#ae81ff">17</span> Benchmarks version <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">+</span>] Supports HTML <span style="color:#f92672">and</span> CLI output
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Tip: Use the <span style="color:#f92672">-</span>h option <span style="color:#66d9ef">for</span> more information on how to use Onyx<span style="color:#e6db74">&#39;s arguments and ensure stable connectivity between</span>
+</span></span><span style="display:flex;"><span>the target Cisco router <span style="color:#f92672">and</span> the host machine running the CAAAT<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GitHub: https[:<span style="color:#f92672">//</span>]github[<span style="color:#f92672">.</span>]com<span style="color:#f92672">/</span>UncleSocks<span style="color:#f92672">/</span>onyx<span style="color:#f92672">-</span>caaat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">==================================================================================================================================</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Target <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">192.168.157.251</span>
+</span></span><span style="display:flex;"><span>Username <span style="color:#f92672">&gt;</span> admin
+</span></span><span style="display:flex;"><span>Password <span style="color:#f92672">&gt;</span> <span style="color:#f92672">********</span>
+</span></span><span style="display:flex;"><span>Enable <span style="color:#75715e"># ********</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Connecting to target Cisco router <span style="color:#ae81ff">192.168.157.251</span> via SSH<span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>Identifying Ciso IOS version<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>Cisco IOS Version: <span style="color:#ae81ff">17</span>
+</span></span><span style="display:flex;"><span>Running CIS Ciso IOS <span style="color:#ae81ff">17</span> Benchmark assessment<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Performing CIS Cisco IOS <span style="color:#ae81ff">17</span> Management Plane Benchmarks assessment<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>Performing CIS Cisco IOS <span style="color:#ae81ff">17</span> Control Plane Benchmarks assessment<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>Performing CIS Cisco IOS <span style="color:#ae81ff">17</span> Data Plane Benchmarks assessment<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>Generating assessment report<span style="color:#f92672">.</span>
+</span></span></code></pre></div><p>Once SSH connection is established, it will identify the Cisco IOS version and run the CIS checks on the three planes (Management, Control, and Data). Wait until the tool has completed its CIS checks and it will automatically generate a report for you.</p>
+<h2 id="assessment-output">Assessment Output</h2>
+<p>ONYX is capable of displaying its assessments reports in CLI and HTML format.</p>
+<h3 id="cli-assessment-report">CLI Assessment Report</h3>
+<p>The report is divided into two main sections: the <strong>Report Summary</strong> and the <strong>Assessment Breakdown</strong>.</p>
+<p>The Report Summary displays the overall number of <strong>Passed</strong>, <strong>Failed</strong>, and <strong>Not Applicable (NA)</strong> compliance checks. It also displays a high-level table of the different CIS checks performed and their compliance result.</p>
+<p><strong>Note:</strong> The NA checks typically comprises of services/configuration that are not enabled.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">============================================================================================================================================</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                                 <span style="color:#f92672">--</span> CIS CISCO IOS BENCHMARK ASSESSMENT REPORT <span style="color:#f92672">--</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">--------------------------------------------------------------------------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                                                REPORT SUMMARY
+</span></span><span style="display:flex;"><span>                                                <span style="color:#f92672">------------------------------------------------</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Target: <span style="color:#ae81ff">192.168.157.251</span>
+</span></span><span style="display:flex;"><span>Version: <span style="color:#ae81ff">17</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Passed Compliance Checks: <span style="color:#ae81ff">39</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Failed Compliance Checks: <span style="color:#ae81ff">45</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Unchecked Compliance Checks: <span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Compliance Score Breakdown
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Management Plane: <span style="color:#ae81ff">12</span> Passed; <span style="color:#ae81ff">21</span> Failed; <span style="color:#ae81ff">9</span> Unchecked
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Control Plane: <span style="color:#ae81ff">11</span> Passed; <span style="color:#ae81ff">19</span> Failed; <span style="color:#ae81ff">0</span> Unchecked
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+</span> Data Plane: <span style="color:#ae81ff">16</span> Passed; <span style="color:#ae81ff">5</span> Failed; <span style="color:#ae81ff">2</span> Unchecked
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                                                MANAGEMENT PLANE
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+----------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> CIS Check                                                                                                            <span style="color:#f92672">|</span> Level <span style="color:#f92672">|</span>   Compliant    <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+----------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">1.1.1</span> Enable <span style="color:#e6db74">&#39;aaa new-model&#39;</span>                                                                                         <span style="color:#f92672">|</span>   <span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span>     <span style="color:#66d9ef">False</span>      <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">1.1.2</span> Enable <span style="color:#e6db74">&#39;aaa authentication login&#39;</span>                                                                              <span style="color:#f92672">|</span>   <span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span>     <span style="color:#66d9ef">False</span>      <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">1.1.3</span> Enable <span style="color:#e6db74">&#39;aaa authentication enable default&#39;</span>                                                                     <span style="color:#f92672">|</span>   <span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span>     <span style="color:#66d9ef">False</span>      <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+----------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">--</span>Truncated Result<span style="color:#f92672">--</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> 						CONTROL PLANE
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+-----------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> CIS Check                                                                                                            <span style="color:#f92672">|</span> Level <span style="color:#f92672">|</span> Compliant <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+-----------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">2.1.1.1.1</span> Set the <span style="color:#e6db74">&#39;hostname&#39;</span>                                                                                         <span style="color:#f92672">|</span>   <span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span>    <span style="color:#66d9ef">True</span>   <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">2.1.1.1.2</span> Set the <span style="color:#e6db74">&#39;ip domain-name&#39;</span>                                                                                   <span style="color:#f92672">|</span>   <span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span>    <span style="color:#66d9ef">True</span>   <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">2.1.1.1.3</span> Set <span style="color:#e6db74">&#39;modulus&#39;</span> to greater than <span style="color:#f92672">or</span> equal to <span style="color:#ae81ff">2048</span> <span style="color:#66d9ef">for</span> <span style="color:#e6db74">&#39;crypto key generate rsa&#39;</span>                               <span style="color:#f92672">|</span>   <span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span>    <span style="color:#66d9ef">True</span>   <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+-----------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">--</span>Truncated Result<span style="color:#f92672">--</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> 						DATA PLANE
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+----------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> CIS Check                                                                                                            <span style="color:#f92672">|</span> Level <span style="color:#f92672">|</span>   Compliant    <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+----------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">3.1.1</span> Set <span style="color:#e6db74">&#39;no ip source-route&#39;</span>                                                                                       <span style="color:#f92672">|</span>   <span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span>     <span style="color:#66d9ef">False</span>      <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">3.1.2</span> Set <span style="color:#e6db74">&#39;no ip proxy-arp&#39;</span>                                                                                          <span style="color:#f92672">|</span>   <span style="color:#ae81ff">2</span>   <span style="color:#f92672">|</span>     <span style="color:#66d9ef">False</span>      <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">3.1.3</span> Set <span style="color:#e6db74">&#39;no interface tunnel;                                                                                      |   2   |      True      |</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+----------------------------------------------------------------------------------------------------------------------+-------+----------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">--</span>Truncated Result<span style="color:#f92672">--</span>
+</span></span></code></pre></div><p>The <strong>Assessment Breakdown</strong> provides a more detailed output of each of the CIS checks, including the current configuration of the Cisco router. A sample output is displayed below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">3.3.3</span> Require RIPv2 Authentication <span style="color:#66d9ef">if</span> Protocol <span style="color:#f92672">is</span> Used
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+------------------------------------------+-------+-----------+---------------------------------------------------------------------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> CIS Check                                <span style="color:#f92672">|</span> Level <span style="color:#f92672">|</span> Compliant <span style="color:#f92672">|</span> Current Configuration                                                     <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+------------------------------------------+-------+-----------+---------------------------------------------------------------------------+</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">3.3.3.1</span> Set <span style="color:#e6db74">&#39;key chain&#39;</span>                  <span style="color:#f92672">|</span>   <span style="color:#ae81ff">2</span>   <span style="color:#f92672">|</span>    <span style="color:#66d9ef">True</span>   <span style="color:#f92672">|</span> [{<span style="color:#e6db74">&#39;Key Chain&#39;</span>: <span style="color:#e6db74">&#39;MYCHAIN&#39;</span>, <span style="color:#e6db74">&#39;Key&#39;</span>: <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;Key String&#39;</span>:                       <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>                                          <span style="color:#f92672">|</span>       <span style="color:#f92672">|</span>           <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;dlsu_secure_traffic&#39;</span>}, {<span style="color:#e6db74">&#39;Key Chain&#39;</span>: <span style="color:#e6db74">&#39;RIPCHAIN&#39;</span>, <span style="color:#e6db74">&#39;Key&#39;</span>: <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Key        |</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>                                          <span style="color:#f92672">|</span>       <span style="color:#f92672">|</span>           <span style="color:#f92672">|</span> String<span style="color:#e6db74">&#39;: &#39;</span>secure_rip<span style="color:#e6db74">&#39;}]                                                   |</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span> <span style="color:#ae81ff">3.3.3.2</span> Set <span style="color:#e6db74">&#39;key&#39;</span>                        <span style="color:#f92672">|</span>   <span style="color:#ae81ff">2</span>   <span style="color:#f92672">|</span>    <span style="color:#66d9ef">True</span>   <span style="color:#f92672">|</span> [{<span style="color:#e6db74">&#39;Key Chain&#39;</span>: <span style="color:#e6db74">&#39;MYCHAIN&#39;</span>, <span style="color:#e6db74">&#39;Key&#39;</span>: <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;Key String&#39;</span>:                       <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>                                          <span style="color:#f92672">|</span>       <span style="color:#f92672">|</span>           <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;dlsu_secure_traffic&#39;</span>}, {<span style="color:#e6db74">&#39;Key Chain&#39;</span>: <span style="color:#e6db74">&#39;RIPCHAIN&#39;</span>, <span style="color:#e6db74">&#39;Key&#39;</span>: <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Key        |</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>                                          <span style="color:#f92672">|</span>       <span style="color:#f92672">|</span>           <span style="color:#f92672">|</span> String<span style="color:#e6db74">&#39;: &#39;</span>secure_rip<span style="color:#e6db74">&#39;}]                                                   |</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">+------------------------------------------+-------+-----------+---------------------------------------------------------------------------+</span>
+</span></span></code></pre></div><h3 id="html-assessment-report">HTML Assessment Report</h3>
+<p>When the <code>-o</code> or <code>--output</code> option is specified, the tool will output an HTML report.</p>
+<p><strong>Note:</strong> The HTML reports are stored under the <code>reports_module/reports</code> folder.</p>
+
+  </div>
+  
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <a href="/tags/python/">Python</a>
+        , 
+        <a href="/tags/tool/">Tool</a>
+        , 
+        <a href="/tags/network/">Network</a>
+        
+    </ul>
+  </div>
+
+
+      </div>
+      <div class="sidebar">
+        
+    <h1 class="sidebar-title">Waffles CyBlog Theme</h1>    
+    
+        <p class="sidebar-description">A simple Hugo dark theme created for my cybersecurity blog, and inspired by the risotto theme.</p>
+    
+    
+
+
+
+<ul class="sidebar-links">
+    
+    <li>
+        <a href="https://www.linkedin.com/feed/" rel="me" aria-label="" title="">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.github.com/" rel="me" aria-label="" title="">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>&nbsp;
+    </li>
+    
+</ul>
+
+<p>--</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    
+    <p class="copyright">Made using Hugo and the Waffles theme. Created by UncleSocks, 2024.</p>
+
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{{- $page := .page }}
+{{- $taxonomy := .taxonomy }}
+
+{{- with $page.GetTerms $taxonomy }}
+  {{- $label := (index . 0).Parent.LinkTitle }}
+  <div>
+    <div>{{ $label }}:</div>
+    <ul>
+      {{- $termCount := len (where . "LinkTitle" "!=" "") }}
+      {{- range $index, $item := . }}
+        <a href="{{ $item.RelPermalink }}">{{ $item.LinkTitle }}</a>
+        {{ if lt (add $index 1) $termCount }}, {{ end }}
+      {{- end }}
+    </ul>
+  </div>
+{{- end }}
