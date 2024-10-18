@@ -24,7 +24,7 @@ weight = 30
 
 [params.about]
 title = "Waffles CyBlog Theme"
-description = "A simple Hugo dark theme created for my cybersecurity blog, and inspired by the risotto theme."
+description = "A minimal Hugo dark theme created for my cybersecurity blog, and inspired by the risotto theme."
 
 [[params.socialLinks]]
 icon = "fa-brands fa-linkedin"

@@ -89,6 +89,10 @@ ul.sidebar-link li {
   font-size: 17px;
 }
 
+.list-others {
+  font-size: 20px;
+}
+
 .post-list {
   font-size: medium;
   color: rgb(237, 255, 224);
