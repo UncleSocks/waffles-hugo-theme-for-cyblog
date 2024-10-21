@@ -36,3 +36,6 @@ url = "https://www.github.com/"
 
 [params]
 copyright = "Made using Hugo and the Waffles theme. Created by UncleSocks, 2024."
+
+[taxonomies]
+tag = "tags"
