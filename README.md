@@ -1,8 +1,8 @@
 ![waffles](https://github.com/user-attachments/assets/13f5e303-8376-4464-ab5f-bbd5b4ca6211)
 
 # Waffles: A Hugo Theme for CyBlog
-Waffles is a minimal dark Hugo theme inspired by the Risotto theme, created for my CyBlog website. 
-The colorway is modeled after the cliché "hacking" computer terminal — a black/grey background with green text. The theme is named after our Shih Tzu, Waffle, or "fifi" for short. 
+Waffles is a minimal dark Hugo theme created for my CyBlog website. 
+The colorway is modeled after the cliché "hacking" computer terminal — a black/grey background with green text. The theme is named after our Shih Tzu, Waffle, or "fifi" for short, and was inspired by the Risotto Hugo theme.
 
 ![image](https://github.com/user-attachments/assets/39e7b685-a770-408b-a01f-17d62ae9d254)
 
