@@ -13,11 +13,13 @@
     {{ template "_internal/pagination.html" . }}
 
   {{ else if eq .Kind "taxonomy"}}
-    {{- $termCount := len (where .Pages "LinkTitle" "!=" "" ) }}
-    {{- range $index, $item := .Pages }}
-      <a href="{{ $item.RelPermalink }}">{{ $item.LinkTitle }}</a>
-      {{ if lt (add $index 1) $termCount }}, {{ end }}
-    {{ end }}
+    <div class="tag-list">
+      {{- $termCount := len (where .Pages "LinkTitle" "!=" "" ) }}
+      {{- range $index, $item := .Pages }}
+        <a href="{{ $item.RelPermalink }}">{{ $item.LinkTitle }}</a>
+        {{ if lt (add $index 1) $termCount }},{{ end }}
+      {{ end }}
+    </div>
 
   {{ else }}
     {{ range .Pages }}

@@ -63,6 +63,10 @@ pre {
   overflow: auto;
 }
 
+.tag-list {
+  font-size: 20px;
+}
+
 .sidebar {
   flex: 1;
   font-size: larger;
