@@ -19,7 +19,9 @@ The current theme version only has basic features -- enough to create blog posts
 ## Installation 
 After creating your Hugo site, download or Git Clone this repository and copy the directory to the site's `themes` directory using the following command:
 
-`git clone https://github.com/UncleSocks/waffles-hugo-theme-for-cyblog && cd themes/waffles`
+```
+git clone https://github.com/UncleSocks/waffles-hugo-theme-for-cyblog  themes/waffles
+```
 
 ### Configuration
 Then, configure the Hugo site to use the Waffles theme by adding `theme = 'waffles'` to the `hugo.toml` file or `theme: waffles` to the `hugo.yaml` file.
