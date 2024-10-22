@@ -1,6 +1,6 @@
 body {
-  background-color: #222;
-  color: #e1ffdf;
+  background-color: #111111;
+  color: #7bff23a6;
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.5;
   margin: 10px auto;
@@ -10,16 +10,16 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px;
   margin-bottom: 1rem;
 }
 
 footer {
-  border-top: 1px solid #222;
+  border-top: 1px;
 }
 
 a {
-  color: rgb(26, 161, 83);
+  color: rgba(239, 255, 235, 0.685);
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ pre {
 }
 
 .content {
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(32, 32, 32);
   flex: 2;
   padding: 25px;
   margin-right: 10px;
@@ -91,6 +91,7 @@ ul.sidebar-link li {
 
 .sidebar-title {
   font-size: 17px;
+  color:rgb(95, 243, 9)
 }
 
 .list-others {
@@ -103,16 +104,18 @@ ul.sidebar-link li {
 }
 
 .post-list a {
-  color: rgb(110, 255, 129);
+  color: rgba(134, 255, 110, 0.719);
 }
 
 .post-time {
-  color: rgb(33, 255, 33);
+  color: rgba(222, 58, 255, 0.589);
+  font-size: 17px;
+  font-weight: bolder;
 }
 
 .post-content {
-  color: rgb(250, 250, 250);
-  font-size: 15px;
+  color: rgba(241, 255, 230, 0.753);
+  font-size: 17px;
 }
 
 .post-content img {
