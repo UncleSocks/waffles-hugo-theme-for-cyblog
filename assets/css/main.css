@@ -98,6 +98,24 @@ ul.sidebar-link li {
   font-size: 20px;
 }
 
+.summary-title {
+  color:rgba(0, 194, 48, 0.795)
+}
+
+.summary-date {
+  font-size: small;
+  color: rgba(253, 255, 253, 0.849);
+}
+
+.summary-content {
+  color: rgba(241, 255, 230, 0.753);
+}
+
+.read-more {
+  font-size: 17px;
+  color: rgba(126, 255, 5, 0.74);
+}
+
 .post-list {
   font-size: medium;
   color: rgb(237, 255, 224);
