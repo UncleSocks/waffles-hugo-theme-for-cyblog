@@ -11,7 +11,7 @@ The colorway follows the cliché "hacking" computer terminal look — a black/gr
 
 ## Features
 
-The current theme version only has basic features -- enough to create blog posts. In addition to blog posting, it supports the following:
+The current theme version only has basic features -- perfect for simple blog posts that are inspired by hacking or cybersecurity. In addition to blog posting, it supports the following:
 - Plain HTML/CSS, no JavaScript and frameworks
 - Favicons support using Font Awesome
 - Tags (Taxonomy) for post categorization
