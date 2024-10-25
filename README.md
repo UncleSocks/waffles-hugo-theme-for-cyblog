@@ -15,6 +15,7 @@ The current theme version only has basic features -- enough to create blog posts
 - Plain HTML/CSS, no JavaScript and frameworks
 - Favicons support using Font Awesome
 - Tags (Taxonomy) for post categorization
+- About page
 
 ## Installation 
 After creating your Hugo site, download or Git Clone this repository and copy the directory to the site's `themes` directory using the following command:
