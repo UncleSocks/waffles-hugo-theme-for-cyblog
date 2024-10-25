@@ -141,6 +141,16 @@ ul.sidebar-link li {
   height: auto;
 }
 
+.about-title {
+  color: #7bff23a6;
+  font-size: 25px;
+}
+
+.about-content {
+  color: rgba(241, 255, 230, 0.753);
+  font-size: 18px;
+}
+
 .pagination {
   display: flex;
   list-style: none;

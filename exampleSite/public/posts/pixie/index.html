@@ -30,6 +30,10 @@
       <a href="/tags/">Tags</a>
     </li>
     
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
   </ul>
 </nav>
 </header>
@@ -38,14 +42,16 @@
     <div class="container">
       <div class="content">
         
-  <h1 class="post-title">Pixie: Defenders Automated IP Address Workflow</h1>
-
   
   
-  <time datetime="2023-12-28T20:30:16&#43;08:00" class="post-time">December 28, 2023</time>
+    <h1 class="post-title">Pixie: Defenders Automated IP Address Workflow</h1>
 
-  <div class="post-content">
-    <p>A Python 3 script, named after my Mini Pinscher, automates IP address lookup using IPInfo or IBM X-Force API.</p>
+    
+    
+    <time datetime="2023-12-28T20:30:16&#43;08:00" class="post-time">December 28, 2023</time>
+
+    <div class="post-content">
+      <p>A Python 3 script, named after my Mini Pinscher, automates IP address lookup using IPInfo or IBM X-Force API.</p>
 <p>It accepts an IP address wordlist file or captures the foreign addresses the host machine is communicating to using netstat, then displays the output in <strong>IPADDRESS[COUNTRY:ORGANIZATION:HOSTNAME]</strong> format and automatically checks against a blacklist. The script also has a simple search engine that accepts IP address organization keyword/s and outputs the addresses matching the keyword/s (it can also negate your searches).</p>
 <p><strong>NOTE:</strong> The script requires you to supply your IPInfo API token or IBM X-Force API key and password.
 The tool aims to assist SOC analysts in parsing and processing large volumes of IP addresses that would otherwise be unmanageable. It can now also be used to process the IP addresses your host machine is communicating and check them against the blacklist.</p>
@@ -196,8 +202,8 @@ The tool aims to assist SOC analysts in parsing and processing large volumes of 
 <p>CSV file outputs are saved under the <code>./reports/</code> folder. An <code>output.csv</code> sample file is provided for reference.</p>
 <p>Similar to the CLI output, the CSV file is divided into two sections: the processed IP address list and the blacklisted IP addresses.</p>
 
-  </div>
-  
+    </div>
+    
   <div>
     <div>Tags:</div>
     <ul>
@@ -208,6 +214,8 @@ The tool aims to assist SOC analysts in parsing and processing large volumes of 
     </ul>
   </div>
 
+
+  
 
       </div>
       <div class="sidebar">

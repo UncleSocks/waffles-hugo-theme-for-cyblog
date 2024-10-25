@@ -1,10 +1,26 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  
+  {{ if eq .Section "posts" }}
+    <h1 class="post-title">{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time datetime="{{ $dateMachine }}" class="post-time">{{ $dateHuman }}</time>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  {{ else if eq .Type "about" }}
+    <h1 class="about-title">{{ .Title }}</h1>
+    <div class="about-content">
+      {{ .Content }}
+    </div>
+
+  {{ else }}
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    
+  {{ end }}
 {{ end }}
