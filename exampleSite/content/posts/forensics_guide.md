@@ -35,4 +35,11 @@ In today’s digital age, forensic analysis plays a critical role in identifying
 ## Conclusion
 Identifying anomalies in network traffic and memory is crucial for detecting and responding to security incidents. By establishing baselines, monitoring unusual behavior, and utilizing forensic tools like Wireshark and Volatility, you can effectively investigate suspicious activity. Memory and network forensics go hand-in-hand in uncovering stealthy attacks that evade traditional security measures.
 
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1    | Data 1   | Data 2   |
+| Row 2    | Data 3   | Data 4   |
+
 Stay vigilant, and continue refining your forensic skills to stay ahead of the ever-evolving threat landscape.
+
+

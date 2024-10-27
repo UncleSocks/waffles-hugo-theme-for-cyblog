@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hacking on Waffles CyBlog Theme</title>
-    <link>http://localhost:1313/tags/hacking/</link>
+    <link>http://localhost:56147/tags/hacking/</link>
     <description>Recent content in Hacking on Waffles CyBlog Theme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Oct 2024 20:30:16 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56147/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MEEPS SECURITY</title>
-      <link>http://localhost:1313/posts/meeps/</link>
+      <link>http://localhost:56147/posts/meeps/</link>
       <pubDate>Sat, 12 Oct 2024 20:30:16 +0800</pubDate>
-      <guid>http://localhost:1313/posts/meeps/</guid>
+      <guid>http://localhost:56147/posts/meeps/</guid>
       <description>&lt;p&gt;MEEPS SECURITY is a simulation game with horror elements designed to extend cybersecurity training and awareness by playing as an L1 Security Operation Center (SOC) analyst. Players handle incoming calls regarding cybersecurity incidents, evaluating and submitting the appropriate threat to the callers within the given service level agreement (SLA). The player must correctly resolve at least 80% of tickets to pass the assessment during the shift.&lt;/p&gt;&#xA;&lt;p&gt;This is named after one of my chows, named Meepo (Yes, the DOTA character).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pixie: Defenders Automated IP Address Workflow</title>
-      <link>http://localhost:1313/posts/pixie/</link>
+      <link>http://localhost:56147/posts/pixie/</link>
       <pubDate>Thu, 28 Dec 2023 20:30:16 +0800</pubDate>
-      <guid>http://localhost:1313/posts/pixie/</guid>
+      <guid>http://localhost:56147/posts/pixie/</guid>
       <description>&lt;p&gt;A Python 3 script, named after my Mini Pinscher, automates IP address lookup using IPInfo or IBM X-Force API.&lt;/p&gt;&#xA;&lt;p&gt;It accepts an IP address wordlist file or captures the foreign addresses the host machine is communicating to using netstat, then displays the output in &lt;strong&gt;IPADDRESS[COUNTRY:ORGANIZATION:HOSTNAME]&lt;/strong&gt; format and automatically checks against a blacklist. The script also has a simple search engine that accepts IP address organization keyword/s and outputs the addresses matching the keyword/s (it can also negate your searches).&lt;/p&gt;</description>
     </item>
   </channel>

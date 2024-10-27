@@ -29,6 +29,20 @@ pre {
   border-radius: 5px;    
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #fbfff9;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
 .container {
   display: flex;
   margin: 10px auto;
