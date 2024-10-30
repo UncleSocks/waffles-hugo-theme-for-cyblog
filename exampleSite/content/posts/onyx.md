@@ -29,7 +29,7 @@ The tool uses `Netmiko` to connect to the target Cisco IOS router via SSH. The `
 
 Use the `-h` or `--help` option to display a brief guide on how to use ONYX.
 
-```python
+{{< code python >}}
 C:\Users\UncleSocks\Documents\Tools\Onyx_Directory\onyx.py -h
 usage: ONYX [-h] [-v VERSION] [-o OUTPUT]
 
@@ -44,7 +44,7 @@ options:
                         HTML report filename with .html extension
 
 The HTML report output is saved under the 'reports_module' directory.
-```
+{{< /code >}}
 
 ### Available Options
 
@@ -59,14 +59,14 @@ The HTML report output is saved under the 'reports_module' directory.
 
 **Example:** 
 
-```python
+{{< code python >}}
 C:\Users\UncleSocks\Documents\Tools\Onyx_Directory\onyx.py -v 17 -o report.html
-```
+{{< /code >}}
 
 ### Running ONYX: CAAAT
 When running ONYX, it will require you to enter the Cisco router's **IP address**, **username**, **password**, and **enable password/secret**. Ensure that the target is reachable. 
 
-```python
+{{< code python >}}
 C:\Users\UncleSocks\Documents\Tools\Onyx_Directory\onyx.py -v 17 -o report.html
 
 ==================================================================================================================================
@@ -117,7 +117,7 @@ Performing CIS Cisco IOS 17 Management Plane Benchmarks assessment.
 Performing CIS Cisco IOS 17 Control Plane Benchmarks assessment.
 Performing CIS Cisco IOS 17 Data Plane Benchmarks assessment.
 Generating assessment report.
-```
+{{< /code >}}
 Once SSH connection is established, it will identify the Cisco IOS version and run the CIS checks on the three planes (Management, Control, and Data). Wait until the tool has completed its CIS checks and it will automatically generate a report for you.
 
 ## Assessment Output
@@ -132,7 +132,7 @@ The Report Summary displays the overall number of **Passed**, **Failed**, and **
 
 **Note:** The NA checks typically comprises of services/configuration that are not enabled.
 
-```python
+{{< code python >}}
 ============================================================================================================================================
 
                                                  -- CIS CISCO IOS BENCHMARK ASSESSMENT REPORT --
@@ -185,10 +185,10 @@ Compliance Score Breakdown
 | 3.1.3 Set 'no interface tunnel;                                                                                      |   2   |      True      |
 +----------------------------------------------------------------------------------------------------------------------+-------+----------------+
 --Truncated Result--
-```
+{{< /code >}}
 
 The **Assessment Breakdown** provides a more detailed output of each of the CIS checks, including the current configuration of the Cisco router. A sample output is displayed below.
-```python
+{{< code python >}}
 3.3.3 Require RIPv2 Authentication if Protocol is Used
 
 +------------------------------------------+-------+-----------+---------------------------------------------------------------------------+
@@ -201,7 +201,7 @@ The **Assessment Breakdown** provides a more detailed output of each of the CIS 
 |                                          |       |           | 'dlsu_secure_traffic'}, {'Key Chain': 'RIPCHAIN', 'Key': '2', 'Key        |
 |                                          |       |           | String': 'secure_rip'}]                                                   |
 +------------------------------------------+-------+-----------+---------------------------------------------------------------------------+
-```
+{{< /code >}}
 
 ### HTML Assessment Report
 When the `-o` or `--output` option is specified, the tool will output an HTML report. 
