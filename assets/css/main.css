@@ -34,6 +34,7 @@ a {
 
 pre {
   white-space: pre-wrap;
+  word-break: keep-all;
   word-wrap:  break-word;
   overflow-x: auto;
   padding: 15px;
@@ -80,6 +81,7 @@ th, td {
 }
 
 .container {
+  word-break: break-all;
   display: flex;
   margin: 10px auto;
   max-width: 1200px; 

@@ -36,5 +36,12 @@
       <guid>http://localhost:1313/posts/pixie/</guid>
       <description>&lt;p&gt;A Python 3 script, named after my Mini Pinscher, automates IP address lookup using IPInfo or IBM X-Force API.&lt;/p&gt;&#xA;&lt;p&gt;It accepts an IP address wordlist file or captures the foreign addresses the host machine is communicating to using netstat, then displays the output in &lt;strong&gt;IPADDRESS[COUNTRY:ORGANIZATION:HOSTNAME]&lt;/strong&gt; format and automatically checks against a blacklist. The script also has a simple search engine that accepts IP address organization keyword/s and outputs the addresses matching the keyword/s (it can also negate your searches).&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Overcoming IPv4 Private Address Overlaps in Large Business-to-Business Network Scenarios with Virtual Routing and Address Translations Using RFC 6598 Shared Address Space</title>
+      <link>http://localhost:1313/posts/rfc6598/</link>
+      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/rfc6598/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: &lt;em&gt;This is our final Networking paper during my master&amp;rsquo;s degree in Information Security (InfoSec). The topic and initial router configurations were presented by my group mate, E.C. However, I had to make some changes to the provided router configurations and network architecture to remediate the issues we faced in the lab. I deployed the lab environment and revised router configuration using GNS3, then wrote our report paper, which you see below.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

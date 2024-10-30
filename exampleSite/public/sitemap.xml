@@ -44,6 +44,9 @@
     <loc>http://localhost:1313/posts/pixie/</loc>
     <lastmod>2023-12-28T20:30:16+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/rfc6598/</loc>
+    <lastmod>2022-12-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url>
 </urlset>
