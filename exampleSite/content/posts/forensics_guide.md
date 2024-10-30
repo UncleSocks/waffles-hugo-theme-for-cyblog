@@ -42,4 +42,3 @@ Identifying anomalies in network traffic and memory is crucial for detecting and
 
 Stay vigilant, and continue refining your forensic skills to stay ahead of the ever-evolving threat landscape.
 
-

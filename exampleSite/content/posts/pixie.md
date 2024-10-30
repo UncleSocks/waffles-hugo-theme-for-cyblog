@@ -24,7 +24,7 @@ Pixie uses the `ipinfo` library to connect and query IP address information to a
 ## Options
 
 You can use the `-h` or `--help` option to display a quick guide on how to use Pixie.
-```python
+{{< code python >}}
 C:\Users\Pixie>pixie.py -h
 usage: pixie.py [-h] [-w WORDLIST] [-n] [-i IOC] [-o OUTPUT] [-s SOURCE]
 
@@ -41,7 +41,7 @@ options:
                         [Optional] Specify the filename for the CSV file with the .csv extension.
   -s SOURCE, --source SOURCE
                         Specify IP address lookup OSINT source (currently supports IPInfo and IBM X-Force)
-```
+{{< /code >}}
 
 ### Available Options
 
@@ -72,7 +72,7 @@ options:
 
 **Example:** `pixie.py -w C:\Users\$Username\Documents\List_of_IP_Addresses.txt`
 
-```python
+{{< code python >}}
 C:\Users\Pixie>pixie.py -w sample_list.txt
 
 =============================================================================================
@@ -120,7 +120,7 @@ Github: https[://]github[.]com/UncleSocks/pixie-automated-defenders-ip-address-w
 =============================================================================================
 
 Enter token: ***************
-```
+{{< /code >}}
 
 The script will ask for your IPInfo access token or IBM X-Force API key and password and your desired IP address organization keyword/s for searching when running the command. 
 
@@ -130,34 +130,34 @@ The script will ask for your IPInfo access token or IBM X-Force API key and pass
 
 Use a space to separate multiple keywords (e.g., AMAZON MICROSOFT). The script will look up each IP address in your text file list or netstat on IPInfo or IBM X-Force. It will only output the addresses that match ANY of the provided organization keywords. In short, the script will show you the list of addresses belonging to the organization/s in your search.
 
-```python
+{{< code python >}}
 Enter organization keyword (e.g., Microsoft): AMAZON MICROSOFT
 Processing wordlist.
 Performing keyword parsing...
-```
+{{< /code >}}
 
 ### Negating Organization Keyword Search
 
 If you want to negate your search, prepend a `NOT` keyword on your search (e.g., NOT AMAZON MICROSOFT GOOGLE). Similarly, the script will still look up each IP address inside the list or netstat but will only output the IP address that does not belong to the organization/s in your search.
-```python
+{{< code python >}}
 Enter organization keyword (e.g., Microsoft): NOT AMAZON MICROSOFT
 Processing wordlist...
 Performing keyword parsing...
-```
+{{< /code >}}
 
 ### Lookup All IP Addresses In The Wordlist
 If you want to look up all IP addresses in your list, use the `-` key.
-```python
+{{< code python >}}
 Enter organization keyword (e.g., Microsoft): -
 Processing wordlist.
 Performing keyword parsing...
-```
+{{< /code >}}
 
 ### Blacklist Check
 Pixie now features an automated blacklist check against the Cisco Talos Intelligence IP Blacklist:
-```python
+{{< code python >}}
 https://www.talosintelligence.com/documents/ip-blacklist
-```
+{{< /code >}}
 The IP blacklist is updated every time you run Pixie. Suppose an IP address in your wordlist or netstat matches an address in the blacklist. In that case, it will be displayed in the **BLACKLISTED IPs** section in the output.
 
 You can use the `-i` option to run the processed IP addresses against your own blacklist file. A **sample_blacklist.txt** file is included in the repository for reference.
@@ -168,7 +168,7 @@ You can use the `-i` option to run the processed IP addresses against your own b
 Pixie displays the CLI or CSV file output when the `-o` option is specified.
 
 The script displays a two-section output: the parsed addressed then the matched blacklisted IP addresses.
-```python
+{{< code python >}}
 =============================================================================================
                                           OUTPUT
 =============================================================================================
@@ -204,7 +204,7 @@ IP address blacklist updated.
 178.159.36.185[RU:PRIVATE INTERNET HOSTING LTD:NONE]
 59.99.43.205[IN:NATIONAL INTERNET BACKBONE:NONE]
 163.172.154.105[FR:SCALEWAY S.A.S.:105-154-172-163.instances.scw.cloud]
-```
+{{< /code >}}
 
 ### CSV Output
 
