@@ -1,9 +1,13 @@
 name = 'Waffles'
+description = 'Waffles is a minimal dark Hugo theme, inspired by the Risotto Theme, created for my CyBlog'
+
 license = 'MIT'
 licenselink = 'https://github.com/UncleSocks/waffles-a-hugo-theme-for-cyblog/blob/main/LICENSE.md'
-description = 'Waffles is a minimal dark Hugo theme, inspired by the Risotto Theme, created for my CyBlog'
+
 homepage = 'https://github.com/UncleSocks/waffles-a-hugo-theme-for-cyblog'
-tags = ['blog', 'dark', 'minimal']
-features = ['favicon', 'no javascript']
-min_version = "v0.1"
 author = Tyrone Kevin S. Ilisan
+
+tags = ['blog', 'dark', 'minimal', 'responsive']
+features = ['favicon', 'tag taxonomy', 'author taxonomy']
+
+min_version = "v0.1"
