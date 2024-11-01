@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Waffles CyBlog Theme</title>
-    <link>http://localhost:1313/tags/network/</link>
+    <link>http://localhost:50801/tags/network/</link>
     <description>Recent content in Network on Waffles CyBlog Theme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Apr 2024 20:30:16 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50801/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ONYX: Cisco Assessment and Auditing Tool (CAAAT)</title>
-      <link>http://localhost:1313/posts/onyx/</link>
+      <link>http://localhost:50801/posts/onyx/</link>
       <pubDate>Sat, 13 Apr 2024 20:30:16 +0800</pubDate>
-      <guid>http://localhost:1313/posts/onyx/</guid>
+      <guid>http://localhost:50801/posts/onyx/</guid>
       <description>&lt;h3 id=&#34;supported-cisco-cis-benchmark-versions&#34;&gt;Supported Cisco CIS Benchmark Versions&lt;/h3&gt;&#xA;&lt;p&gt;ONYX currently asses your Cisco devices against the following Cisco CIS Benchmark versions:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Cisco Benchmark&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Version&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;CIS Cisco IOS 15 Benchmark&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;v4.1.1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;CIS Cisco IOS 17.x Benchmark&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;v2.0.0&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Both documents are available under the &amp;ldquo;CIS Benchmark Documents&amp;rdquo; folder.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Run &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; to install the tool&amp;rsquo;s dependencies.&lt;/p&gt;&#xA;&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;&#xA;&lt;p&gt;The tool uses &lt;code&gt;Netmiko&lt;/code&gt; to connect to the target Cisco IOS router via SSH. The &lt;code&gt;Maskpass&lt;/code&gt; and &lt;code&gt;PrettyTable&lt;/code&gt; are used to obfuscate the login password and display the report output in the CLI, respectively.&lt;/p&gt;</description>
     </item>
   </channel>

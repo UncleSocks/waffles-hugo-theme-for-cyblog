@@ -221,6 +221,10 @@ ul.sidebar-link li {
   height: auto;
 }
 
+.post-content li, ul {
+  word-break: break-all;
+}
+
 .about-title {
   color: #7bff23a6;
   font-size: 25px;
