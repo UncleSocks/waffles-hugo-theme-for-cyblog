@@ -6,7 +6,7 @@
 Waffles 🧇 is a minimal and responsive dark Hugo theme created for my CyBlog website. 
 The colorway takes inspiration from the cliché "hacking" computer terminal look — a black/grey background with green text. The theme is named after our Shih Tzu, Waffle, or "fifi" for short, and was heavily influenced the Risotto Hugo theme.
 
-![Waffles Screenshot](https://github.com/user-attachments/assets/18826ae0-73c9-4897-b071-5f7b02b2ad17)
+![Waffles Screenshot](https://github.com/user-attachments/assets/52ceb676-2516-42ab-aa01-715dcffee3bf)
 
 
 ## Features
