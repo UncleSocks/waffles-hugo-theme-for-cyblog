@@ -3,16 +3,17 @@
 # Waffles: A Hugo Theme for CyBlog 
 ![Static Badge](https://img.shields.io/badge/Made%20With-Hugo-skyblue)    ![Static Badge](https://img.shields.io/badge/Theme-Minimal%20Dark-black)    ![Static Badge](https://img.shields.io/badge/Status-Under%20Development-pink)
 
-Waffles 🧇 is a minimal dark Hugo theme created for my CyBlog website. 
-The colorway follows the cliché "hacking" computer terminal look — a black/grey background with green text. The theme is named after our Shih Tzu, Waffle, or "fifi" for short, and was inspired by the Risotto Hugo theme.
+Waffles 🧇 is a minimal and responsive dark Hugo theme created for my CyBlog website. 
+The colorway takes inspiration from the cliché "hacking" computer terminal look — a black/grey background with green text. The theme is named after our Shih Tzu, Waffle, or "fifi" for short, and was heavily influenced the Risotto Hugo theme.
 
-![image](https://github.com/user-attachments/assets/4929353e-31c3-40e5-be5a-b44e3377b659)
+![image](https://github.com/user-attachments/assets/18826ae0-73c9-4897-b071-5f7b02b2ad17)
 
 
 ## Features
 
 The current theme version only has basic features -- perfect for simple blog posts inspired by hacking or cybersecurity. In addition to blog posting, it supports the following:
 - Plain HTML/CSS, no JavaScript and frameworks
+- Responsive to different screen sizes, including mobile phones.
 - Favicons support (Font Awesome)
 - Tags support
 - About page
