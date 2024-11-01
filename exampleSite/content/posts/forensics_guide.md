@@ -1,6 +1,7 @@
 +++
 title = 'Forensics Guide: Identifying Anomalies in the Network and Memory'
 date = 2024-10-13T20:30:16+08:00
+author = "Waffles"
 draft = false
 type = "posts"
 tags = ["security","forensics","blueteam"]

@@ -1,6 +1,7 @@
 +++
 title = 'Pixie: Defenders Automated IP Address Workflow'
 date = 2023-12-28T20:30:16+08:00
+author = "Waffles"
 draft = false
 type = "posts"
 tags = ["hacking","security"]

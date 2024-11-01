@@ -1,11 +1,10 @@
 +++
-title = 'MEEPS SECURITY'
-date = 2024-10-12T20:30:16+08:00
+title = 'MEEPS Security'
+date = 2024-11-01T20:36:32+08:00
+author = "Waffles, UncleSocks"
 draft = false
 type = "posts"
-tags = ["hacking","security"]
 +++
-
 
 MEEPS SECURITY is a simulation game with horror elements designed to extend cybersecurity training and awareness by playing as an L1 Security Operation Center (SOC) analyst. Players handle incoming calls regarding cybersecurity incidents, evaluating and submitting the appropriate threat to the callers within the given service level agreement (SLA). The player must correctly resolve at least 80% of tickets to pass the assessment during the shift. 
 

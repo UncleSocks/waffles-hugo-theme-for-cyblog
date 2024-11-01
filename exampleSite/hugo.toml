@@ -45,6 +45,7 @@ copyright = "Made using Hugo and the Waffles theme. Created by UncleSocks, 2024.
 
 [taxonomies]
 tag = "tags"
+author = "authors"
 
 [pagination]
   disableAliases = false

@@ -9,11 +9,12 @@
     {{ range $paginator.Pages }}
 
       <h2><a href="{{ .RelPermalink }}" class="summary-title">{{ .LinkTitle }}</a></h2>
-      <h3 class="summary-date">{{ .Date | dateFormat "January 2, 2006"}}</h3>
+      <h3 class="summary-date">{{ .Date | dateFormat "January 2, 2006"}} ◗ {{ .Params.author }}</h3>
       <div class="summary-content">
         {{ .Summary }}
       </div>
       <h3><a href="{{ .RelPermalink }}"  class="read-more">Read More</a></h3>
+      <br>
 
     {{ end }}
     {{ template "_internal/pagination.html" . }}
