@@ -31,9 +31,11 @@
     </div>
 
   {{ else }}
-    {{ range .Pages }}
+    {{ $paginator := .Paginate .Pages.ByDate 10 }}
+    {{ range $paginator.Pages }}
       <li class="list-others"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     {{ end }}
+    {{ template "_internal/pagination.html" . }}
 
   {{ end }}
 {{ end }}

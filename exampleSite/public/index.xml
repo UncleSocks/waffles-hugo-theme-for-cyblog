@@ -2,45 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Waffles CyBlog Theme</title>
-    <link>http://localhost:50801/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Waffles CyBlog Theme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2024 20:36:32 +0800</lastBuildDate>
-    <atom:link href="http://localhost:50801/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Nov 2024 00:16:57 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-10/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-11/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-15/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-15/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-17/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-17/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-19/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-19/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-2/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-3/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test---copy-6/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test---copy-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This is a very long title so that it will be a lot quicker to see the change lol jhsdjshdjshdsjhdjshdjshdhsdhddhsdjhsdjhSIHDUHSDfozisgdfozusgdfousgfou</title>
+      <link>http://localhost:1313/posts/test/</link>
+      <pubDate>Sat, 02 Nov 2024 00:16:57 +0800</pubDate>
+      <guid>http://localhost:1313/posts/test/</guid>
+      <description></description>
+    </item>
     <item>
       <title>MEEPS Security</title>
-      <link>http://localhost:50801/posts/meeps/</link>
+      <link>http://localhost:1313/posts/meeps/</link>
       <pubDate>Fri, 01 Nov 2024 20:36:32 +0800</pubDate>
-      <guid>http://localhost:50801/posts/meeps/</guid>
+      <guid>http://localhost:1313/posts/meeps/</guid>
       <description>&lt;p&gt;MEEPS SECURITY is a simulation game with horror elements designed to extend cybersecurity training and awareness by playing as an L1 Security Operation Center (SOC) analyst. Players handle incoming calls regarding cybersecurity incidents, evaluating and submitting the appropriate threat to the callers within the given service level agreement (SLA). The player must correctly resolve at least 80% of tickets to pass the assessment during the shift.&lt;/p&gt;&#xA;&lt;p&gt;This is named after one of my chows, named Meepo (Yes, the DOTA character).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Forensics Guide: Identifying Anomalies in the Network and Memory</title>
-      <link>http://localhost:50801/posts/forensics_guide/</link>
+      <link>http://localhost:1313/posts/forensics_guide/</link>
       <pubDate>Sun, 13 Oct 2024 20:30:16 +0800</pubDate>
-      <guid>http://localhost:50801/posts/forensics_guide/</guid>
+      <guid>http://localhost:1313/posts/forensics_guide/</guid>
       <description>&lt;p&gt;&lt;em&gt;Disclaimer: The contents are generated by ChatGPT and are just meant to showcase a sample post of using this theme.&lt;/em&gt;&#xA;&lt;em&gt;Images (network diagrams) are original&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In today’s digital age, forensic analysis plays a critical role in identifying and mitigating security threats. When a breach or suspicious activity occurs, forensic experts must dissect various layers of a system to uncover anomalies. Two critical areas of investigation are network traffic and memory. This guide walks you through identifying anomalies in both the network and memory, empowering you to understand what to look for and how to respond.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ONYX: Cisco Assessment and Auditing Tool (CAAAT)</title>
-      <link>http://localhost:50801/posts/onyx/</link>
+      <link>http://localhost:1313/posts/onyx/</link>
       <pubDate>Sat, 13 Apr 2024 20:30:16 +0800</pubDate>
-      <guid>http://localhost:50801/posts/onyx/</guid>
+      <guid>http://localhost:1313/posts/onyx/</guid>
       <description>&lt;h3 id=&#34;supported-cisco-cis-benchmark-versions&#34;&gt;Supported Cisco CIS Benchmark Versions&lt;/h3&gt;&#xA;&lt;p&gt;ONYX currently asses your Cisco devices against the following Cisco CIS Benchmark versions:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Cisco Benchmark&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Version&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;CIS Cisco IOS 15 Benchmark&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;v4.1.1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;CIS Cisco IOS 17.x Benchmark&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;v2.0.0&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Both documents are available under the &amp;ldquo;CIS Benchmark Documents&amp;rdquo; folder.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Run &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; to install the tool&amp;rsquo;s dependencies.&lt;/p&gt;&#xA;&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;&#xA;&lt;p&gt;The tool uses &lt;code&gt;Netmiko&lt;/code&gt; to connect to the target Cisco IOS router via SSH. The &lt;code&gt;Maskpass&lt;/code&gt; and &lt;code&gt;PrettyTable&lt;/code&gt; are used to obfuscate the login password and display the report output in the CLI, respectively.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pixie: Defenders Automated IP Address Workflow</title>
-      <link>http://localhost:50801/posts/pixie/</link>
+      <link>http://localhost:1313/posts/pixie/</link>
       <pubDate>Thu, 28 Dec 2023 20:30:16 +0800</pubDate>
-      <guid>http://localhost:50801/posts/pixie/</guid>
+      <guid>http://localhost:1313/posts/pixie/</guid>
       <description>&lt;p&gt;A Python 3 script, named after my Mini Pinscher, automates IP address lookup using IPInfo or IBM X-Force API.&lt;/p&gt;&#xA;&lt;p&gt;It accepts an IP address wordlist file or captures the foreign addresses the host machine is communicating to using netstat, then displays the output in &lt;strong&gt;IPADDRESS[COUNTRY:ORGANIZATION:HOSTNAME]&lt;/strong&gt; format and automatically checks against a blacklist. The script also has a simple search engine that accepts IP address organization keyword/s and outputs the addresses matching the keyword/s (it can also negate your searches).&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:50801/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50801/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    ___________________________________________&#xD;&#xA;    / I think it already has; my human looks at \&#xD;&#xA;    \ the screen more than the real world.      /              &#xD;&#xA;    -------------------------------------------&#xD;&#xA;                \&#xD;&#xA;                \&#xD;&#xA;                \  |\__/,|   (`\&#xD;&#xA;                _.|o o  |_   ) )&#xD;&#xA;                -(((---(((--------&#xD;&#xA;&#xD;&#xA;                           ______________________&#xD;&#xA;                          / Do you think AI will \&#xD;&#xA;                          \ enslave humanity?    /&#xD;&#xA; _._     _,-&amp;#39;&amp;#34;&amp;#34;`-._        ----------------------&#xD;&#xA;(,-.`._,&amp;#39;(       |\`-/| /&#xD;&#xA;    `-.-&amp;#39; \ )-`( , o o)&#xD;&#xA;          `-    \`_`&amp;#34;&amp;#39;-&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I&amp;rsquo;m Tyrone Kevin Ilisan, a PH Licensed Electronics Engineer and cyber blue teamer (Incident Responder) passionate about everything information security, cybersecurity, networks, space, and developing open-source tools that can hopefully help secure the cyberspace. I have a Bachelor&amp;rsquo;s degree in Electronics Engineering (Telecommunication Engineering focused) and a Master&amp;rsquo;s in Information Security.&lt;/p&gt;</description>
     </item>
   </channel>
