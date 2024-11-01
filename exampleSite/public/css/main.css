@@ -267,7 +267,7 @@ ul.sidebar-link li {
 }
 
 @media screen and (max-width: 800px) {
-  .code-wrapper, .post-content {
+  .code-wrapper, .post-content, .about-content, .copyright {
     font-size: smaller;
   }
 }
