@@ -32,7 +32,6 @@ Then, configure the Hugo site to use the Waffles theme by adding `theme = 'waffl
 In addition to the listed features above, you can modify the theme's menu, site's title, description, and copyright on the `hugo.toml` or `hugo.yaml` file. A sample site is available in the `exampleSite` directory for reference.
 
 ## Performance
-### Home Page
 At the time of writing, my CyBlog homepage with the Waffles theme scored **99%** when tested using Lighthouse Desktop (Navigation). It then scored **98%** on mobile devices.
 
 ![Waffles Lighthouse Performance](https://github.com/user-attachments/assets/bc2b7b17-4a24-4299-b484-024f01e60588)
