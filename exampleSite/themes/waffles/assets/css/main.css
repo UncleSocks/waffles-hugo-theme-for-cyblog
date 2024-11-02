@@ -41,7 +41,6 @@ pre {
   margin: 0;
   border-radius: 5px;
   background-color: #1e1e1e;
-  color: #7bff23a6;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -51,6 +50,8 @@ code {
   display: inline-block;      
   border-radius: 3px;
   font-size: 0.95em;
+  vertical-align: middle;
+  color: #7bff23a6;
 }
 
 .code-wrapper {
@@ -162,7 +163,7 @@ ul.sidebar-link li {
 }
 
 .summary-title {
-  color:rgba(0, 194, 48, 0.795)
+  color:rgba(255, 255, 255, 0.945)
 }
 
 .summary-date {
@@ -173,8 +174,8 @@ ul.sidebar-link li {
 }
 
 .summary-content {
-  color: rgba(241, 255, 230, 0.753);
-  font-size: 15px;
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 16px;
 }
 
 .read-more {
@@ -211,7 +212,7 @@ ul.sidebar-link li {
 }
 
 .post-content {
-  color: rgba(241, 255, 230, 0.753);
+  color: rgba(255, 255, 255, 0.692);
   font-size: 17px;
   max-width: 100%;
 }
@@ -231,7 +232,7 @@ ul.sidebar-link li {
 }
 
 .about-content {
-  color: rgba(241, 255, 230, 0.753);
+  color: rgba(255, 255, 255, 0.692);
   font-size: 18px;
 }
 
