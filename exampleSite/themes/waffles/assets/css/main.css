@@ -110,7 +110,7 @@ th, td {
 
 .content {
   background-color: rgb(32, 32, 32);
-  flex: 3.5;
+  flex: 5;
   float: left;
   width: 70%;
   padding: 25px;
@@ -121,7 +121,7 @@ th, td {
 }
 
 .sidebar {
-  flex: 1;
+  flex: 2;
   font-size: larger;
   padding-left: 15px;
   float: right;
