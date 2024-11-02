@@ -135,6 +135,11 @@ th, td {
   margin-top: -5px;
 }
 
+.list-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
 .tag-list {
   font-size: 20px;
 }
@@ -163,7 +168,8 @@ ul.sidebar-link li {
 }
 
 .summary-title {
-  color:rgba(255, 255, 255, 0.945)
+  color:rgba(30, 255, 0, 0.767);
+  font-size: 23px;
 }
 
 .summary-date {
@@ -222,11 +228,17 @@ ul.sidebar-link li {
   height: auto;
 }
 
+.post-content h1, h2, h3 {
+  color:rgb(237, 255, 224);
+}
+
 .post-content a {
   word-break: break-all;
 }
 
 .about-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: #7bff23a6;
   font-size: 25px;
 }
